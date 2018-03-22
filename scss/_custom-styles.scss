@@ -1,0 +1,13 @@
+.calcsize{
+font-size:calc(16px + (24 - 16)*(100vw - 400px)/(800 - 400);
+/*
+	Automatically make fonts snap to a size based on screen size:
+		calc min font size + max font - min * 100vw - min screen size / max screen - min screen
+	
+	Example:
+	font-size:calc(16px + (24 - 16)*(100vw - 400px)/(800 - 400);
+	
+	24px on screens over 800px wide
+	16px on screens from 400px-800px wide
+*/
+}

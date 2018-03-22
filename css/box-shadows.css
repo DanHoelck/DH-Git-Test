@@ -1,0 +1,705 @@
+/*
+Theme Name: CSS Shadows Box and Text
+Theme URI: http://delicioustheme.com/demo-9/index.html
+Description: A beautiful CSS Shadows Box and Text.
+Author: ukrop-studio
+Author URI: http://www.delicioustheme.com
+*//* ==========================================================================
+   Home
+ ========================================================================== */.rpb_rb {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 7px 7px 4px #666;
+}
+
+.rpb_lt {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: -7px -7px 4px #666;
+}
+
+.rpb_inset_rb {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: inset -7px -7px 4px #666;
+}
+
+.rpb_inset_lt {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: inset 7px 7px 4px #666;
+}
+
+.rpb_curved {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+.rpb_curved:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  left: 10px;
+  width: 46%;
+  height: 20%;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(-3deg) skew(-0deg);
+  -moz-transform: rotate(-3deg) skew(-0deg);
+  -ms-transform: rotate(-3deg) skew(-0deg);
+  -o-transform: rotate(-3deg) skew(-0deg);
+  transform: rotate(-3deg) skew(-0deg);
+}
+
+.rpb_curved:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  right: 10px;
+  width: 46%;
+  height: 20%;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(3deg) skew(0deg);
+  -moz-transform: rotate(3deg) skew(0deg);
+  -ms-transform: rotate(3deg) skew(0deg);
+  -o-transform: rotate(3deg) skew(0deg);
+  transform: rotate(3deg) skew(0deg);
+}
+
+.rpb_per_left {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+.rpb_per_left:before {
+  position: absolute;
+  left: 80px;
+  bottom: 5px;
+  width: 100%;
+  height: 37%;
+  border-radius: 10% 0 0 0;
+  z-index: -1;
+  content: "";
+  box-shadow: -86px 0 17px rgba(0,0,0,0.33);
+  -webkit-transform: skew(36deg);
+  -moz-transform: skew(36deg);
+  -ms-transform: skew(36deg);
+  -o-transform: skew(36deg);
+  transform: skew(36deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.rpb_per_right {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+.rpb_per_right:before {
+  position: absolute;
+  right: 80px;
+  bottom: 5px;
+  width: 100%;
+  height: 37%;
+  border-radius: 0 10% 0 0;
+  z-index: -1;
+  content: "";
+  box-shadow: 86px 0 17px rgba(0,0,0,0.33);
+  -webkit-transform: skew(-36deg);
+  -moz-transform: skew(-36deg);
+  -ms-transform: skew(-36deg);
+  -o-transform: skew(-36deg);
+  transform: skew(-36deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.rpb_pile {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+.rpb_pile:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 96%;
+  bottom: 0px;
+  right: 0px;
+  background: url(../images/school.png);
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+  -webkit-transform: skew(2deg,2deg) translate(3px,8px);
+  -moz-transform: skew(2deg,2deg) translate(3px,8px);
+  -ms-transform: skew(2deg,2deg) translate(3px,8px);
+  -o-transform: skew(2deg,2deg) translate(3px,8px);
+  transform: skew(2deg,2deg) translate(3px,8px);
+}
+
+.rpb_pile:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 96%;
+  bottom: 0px;
+  right: 0px;
+  background: url(../images/school.png);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  -webkit-transform: skew(2deg,2deg) translate(-1px,2px);
+  -moz-transform: skew(2deg,2deg) translate(-1px,2px);
+  -ms-transform: skew(2deg,2deg) translate(-1px,2px);
+  -o-transform: skew(2deg,2deg) translate(-1px,2px);
+  transform: skew(2deg,2deg) translate(-1px,2px);
+}
+
+.rp_inset {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -moz-box-shadow: inset 0 0 10px #666;
+  -webkit-box-shadow: inset 0 0 10px #666;
+  box-shadow: inset 0 0 10px #666;
+}
+
+.rpb_click {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: inset -1px 1px 5px 0px rgba(255,255,255,1), 8px 18px 7px 0px rgba(50, 50, 50, 0.35), -8px 10px 3px 0px rgba(50, 50, 50, 0.4);
+}
+
+.rpb_two_right {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -webkit-box-shadow: 40px 4px 10px 0px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 40px 4px 10px 0px rgba(102, 102, 102, 0.8);
+  box-shadow: 40px 4px 10px 0px rgba(102, 102, 102, 0.8);
+}
+
+.rpb_two_top {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -webkit-box-shadow: 0px -40px 10px 0px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 0px -40px 10px 0px rgba(102, 102, 102, 0.8);
+  box-shadow: 0px -40px 10px 0px rgba(102, 102, 102, 0.8);
+}
+
+.rpb_two_bottom {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -webkit-box-shadow: 0px 40px 10px 0px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 0px 40px 10px 0px rgba(102, 102, 102, 0.8);
+  box-shadow: 0px 40px 10px 0px rgba(102, 102, 102, 0.8);
+}
+
+.rpb_two_left {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -webkit-box-shadow: -40px 0px 10px 0px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: -40px 0px 10px 0px rgba(102, 102, 102, 0.8);
+  box-shadow: -40px 0px 10px 0px rgba(102, 102, 102, 0.8);
+}
+
+.rpb_two_colors {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 5px 5px 5px 5px #666, -5px -5px 5px 5px #dc2122;
+}
+
+.rpb_frame {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 0 0 7px #ccc, 0 0 0 14px #eee, 0 0 0 21px #666;
+}
+
+.rpb_corner {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: -20px 20px 0 -17px #fff, 20px -20px 0 -17px #fff, 20px 20px 0 -20px #dc2122, 0 0 0 2px #dc2122;
+}
+
+.rpb_convex {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  border-radius: 20px;
+  box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+.rpb_dotted {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  border-radius: 20px;
+  border: 5px dotted #ccc;
+  box-shadow: 0 0 0 2px #ccc, inset 0 0 0 2px #ccc;
+}
+
+.rpb_volume {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 0 01px #666,
+             01px 0 #666,
+             01px 02px #666,
+             02px 01px #666,
+             02px 03px #666,
+             03px 02px #666,
+             03px 04px #666,
+             04px 03px #666,
+             04px 05px #666,
+             05px 04px #666,
+             05px 06px #666,
+             06px 05px #666,
+             06px 07px #666,
+             07px 06px #666,
+             07px 08px #666,
+             08px 07px #666,
+             08px 09px #666,
+             09px 08px #666,
+             9px 10px #666,
+             10px 9px #666,
+             10px 9px #666;
+}
+
+.rpb_several {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 5px 5px 0px rgb(200,200,200),
+            10px 10px 0px rgb(184,184,184),
+            15px 15px 0px rgb(168,168,168),
+            20px 20px 0px rgb(200,200,200),
+            25px 25px 0px rgb(184,184,184),
+            30px 30px 0px rgb(168,168,168);
+}
+
+.rpb_border {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  border-radius: 10px;
+  box-shadow: 0 0 0 20px #666, 0 30px 10px -5px;
+}
+
+.rpb_several_center {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  border-radius: 10px;
+  box-shadow: 10px 10px 1px rgb(200,200,200)  ,
+    20px 20px 1px rgb(184,184,184) ,
+    30px 30px 1px rgb(168,168,168) ,
+    -10px 10px 1px rgb(200,200,200)  ,
+    -20px 20px 1px rgb(184,184,184) ,
+    -30px 30px 1px rgb(168,168,168);
+}
+
+.rpb_border_inset {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  border-radius: 10px;
+  box-shadow: 0 0 0 15px rgba(0,0,0,.25),
+            0 3px 15px rgba(100,100,100,.9),
+            0 5px 15px 15px rgba(0,0,0,.25),
+            0 10px 20px rgba(0,0,0,.8) inset;
+}
+
+.rpb_illuminated {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  -webkit-box-shadow: 0 0 10px 5px white, 0px 0px 80px gray, 0px 20px 100px black;
+  -mox-box-shadow: 0 0 10px 5px white, 0px 0px 80px gray, 0px 20px 100px black;
+  box-shadow: 0 0 10px 5px white, 0px 0px 80px gray, 0px 20px 100px black;
+}
+
+.rpb_big_inset {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+  box-shadow: 2px 2px 15px 5px rgba(102,102,102,.6) inset, 2px 2px 30px 10px rgba(102,102,102,.6) inset, 2px 2px 45px 15px rgba(102,102,102,.6) inset;
+}
+
+.rpt_indented {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_indented  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+.rpt_double {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_double  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.rpt_down {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_down  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  text-shadow: 0px 3px 0px #b2a98f,
+             0px 14px 10px rgba(0,0,0,0.15),
+             0px 24px 2px rgba(0,0,0,0.1),
+             0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.rpt_3d {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_3d  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #ccc,
+             0 2px 0 #c9c9c9,
+             0 3px 0 #bbb,
+             0 4px 0 #b9b9b9,
+             0 5px 0 #aaa,
+             0 6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25),
+             0 10px 10px rgba(0,0,0,.2),
+             0 20px 20px rgba(0,0,0,.15);
+}
+
+.rpt_double_big {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_double_big  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #e3e3e3,
+    2px 3px 0 #c9c9c9,
+    3px 5px 0 #b8b8b8,
+    4px 7px 0 #ababab,
+    5px 9px 0 #a1a1a1,
+    6px 11px 0 #969696,
+    0 0 10px rgba(0,0,0,0.15),
+    0 4px 10px rgba(0,0,0,0.25),
+    0 8px 10px rgba(0,0,0,0.45);
+}
+
+.rpt_fire {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_fire  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+}
+
+.rpt_top {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_top h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 0px -15px 0 #666;
+}
+
+.rpt_luminous {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_luminous  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.rpt_many {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_many  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff;
+}
+
+.rpt_rainbow_right {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_rainbow_right  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 3px 0 0 #d91f26, 6px 0 0 #e25b0e,
+		9px 0 0 #f5dd08, 12px 0 0 #059444,
+		15px 0 0 #0287ce, 18px 0 0 #044d91,
+		21px 0 0 #2a1571;
+}
+
+.rpt_diffuse {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_diffuse  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 20px 21px 14px rgba(150, 150, 150, 1);
+}
+
+.rpt_basic {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_basic  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+.rpt_rainbow_down {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_rainbow_down  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #61b4de, 2px 2px #61b4de, 3px 3px #61b4de, 4px 4px #61b4de, 5px 5px #61b4de,
+   
+    6px 6px #91c467, 7px 7px #91c467, 8px 8px #91c467, 9px 9px #91c467, 10px 10px #91c467,
+    
+    11px 11px #f3a14b, 12px 12px #f3a14b, 13px 13px #f3a14b, 14px 14px #f3a14b, 15px 15px #f3a14b,
+    
+    16px 16px #e84c50, 17px 17px #e84c50, 18px 18px #e84c50, 19px 19px #e84c50, 20px 20px #e84c50,
+    
+    21px 21px #4e5965, 22px 22px #4e5965, 23px 23px #4e5965, 24px 24px #4e5965, 25px 25px #4e5965;
+}
+
+.rpt_luminous_double {
+  margin: 30px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url(../images/school.png);
+}
+
+.rpt_luminous_double  h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  text-transform: uppercase;
+  text-shadow: 0 -0.2em 0.5em rgb(0, 255, 255), 0 0.2em 0.5em rgb(255, 0, 0);
+}

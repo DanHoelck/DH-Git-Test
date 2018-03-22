@@ -1,0 +1,139 @@
+/*
+Standard...
+*/
+
+//Colors
+
+$blueblack:#151631;
+$red:#ec1b22;
+$blue:#205ea2;
+$black95:#0d0d0d;
+$black90:#1a1a1a;
+$black85:#272727;
+$black80:#343434;
+$black75:#414141;
+$black70:#4e4e4e;
+
+$foundation-palette: (
+  primary: #2199e8,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
+
+
+//BPs
+
+$breakpoints: (
+  small: 0,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1440px,
+  xxlarge: 1440px,
+);
+
+$breakpoint-classes: (small medium large);
+$bodyfont:'Open Sans', sans-serif;
+$headfont:'Lato',sans-serif;
+
+$header-font-family:$headfont;
+$header-font-weight:600;
+$header-color:$black95;
+$header-lineheight: 1.4 !default;
+$header-margin-bottom: 0.5rem !default;
+
+$body-font-color: $black95;
+$body-font-family:$bodyfont;
+
+
+$header-sizes: (
+  small: (
+    'h1': 32,
+	'h2': 24,
+    'h3': 20,
+    'h4': 19,
+    'h5': 18,
+    'h6': 17,
+  ),
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+
+
+/************
+* SET UP
+*
+* Choose one of the four foundation import methods below
+* Remove the other methods.
+*
+1. Full foundation (flex) - Include everything using flex model
+@import 'foundation';
+@include foundation-everything(true);
+
+2. Full foundation (noflex) - Include everything without flex model
+
+@import 'foundation';
+@include foundation-everything(false);
+
+3. Selective foundation (flex) - Choose which modules to include, use flex model
+
+(Be sure to open the file and comment out unused modules)
+
+@import '_atomic-foundation-flex.scss';
+
+4. Selective foundation (no flex) - Choose which modules to include, without flex model
+
+(Be sure to open the scss file and comment out unused modules)
+
+@import '_atomic-foundation-noflex.scss';
+
+
+*************/
+
+ 
+
+@import 'foundation';
+$baseline:16px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$xl-width: 1440px;
+@include foundation-everything(true);
+
+@import 'helpers/_utilities'; //Edit these in root
+
+@import 'specialfx/_fx';
+@import '_custom-styles';
+
+.subhead{
+	font-weight: normal;
+	margin-top: 30px;
+	color:#666;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.demo-img{
+	border:5px solid #fff;
+	@extend .z-depth-3;
+	margin-bottom: 20px;
+}
+.example-card{
+	p{
+		font-weight: bold;
+		margin-bottom: 0.25rem;
+	}
+	p.details{
+		font-weight: normal;
+		color:rgba(0,0,0,0.7);
+		font-size: 15px;
+		&.left{
+			text-align: left !important;
+		}
+	}
+}

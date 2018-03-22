@@ -1,0 +1,42 @@
+	
+.colorwrap {
+	padding: 0.005em 0.6em;
+	line-height: 1.3;
+	display: inline-block;
+	&.goldfx {
+		background-color: #ffde00;
+	}
+	&.redfx {
+		background-color: firebrick;
+		&.whitetext {
+			color: white;
+		}
+	}
+	&.blackfx {
+		background-color: #111;
+	}
+	&.darktext {
+		color: black;
+	}
+	&.brighttext {
+		color: white;
+	}
+	&.padsmallx2 {
+		padding: 0.005em 0.3em;
+	}
+	&.padwidex2 {
+		padding: 0.005em 0.5em;
+	}
+	&.padwidex4 {
+		padding: 0.005em 1em;
+	}
+	&.padwidex6 {
+		padding: 0.005em 1.5em;
+	}
+	&.padwidex8 {
+		padding: 0.005em 2em;
+	}
+	&.padwidex16 {
+		padding: 0.005em 3.5em;
+	}
+}
